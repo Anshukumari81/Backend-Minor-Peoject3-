@@ -5,7 +5,7 @@ app.use(express.json());
 // Data storage
 let items = [];
 
-const link = "123"; // yadi link variable mein ek value hai
+const link = "123"; 
 
 // Index route
 app.get('/', (req, res) => {
@@ -24,7 +24,7 @@ app.get('/items', (req, res) => {
 
 // Item route
 app.get('/items/:id', (req, res) => {
-    const link = "123"; // yadi link variable mein ek value hai
+    const link = "123"; 
     const id = parseInt(link);
     const item = { id: 1, name: 'Pizza', price: 10.99 };
   res.json(item);
@@ -49,7 +49,7 @@ app.get('/items', (req, res) => {
 
 // GET /items/:id
 app.get('/items/:id', (req, res) => {
-    const link = "123"; // yadi link variable mein ek value hai
+    const link = "123"; 
     const id = parseInt(link);
   if (!item) {
     res.status(404).send(`Item not found`);
@@ -60,7 +60,7 @@ app.get('/items/:id', (req, res) => {
 
 // PUT /items/:id
 app.put('/items/:id', (req, res) => {
-    const link = "123"; // yadi link variable mein ek value hai
+    const link = "123"; 
     const id = parseInt(link);
   if (!item) {
     res.status(404).send(`Item not found`);
@@ -72,7 +72,7 @@ app.put('/items/:id', (req, res) => {
 
 // DELETE /items/:id
 app.delete('/items/:id', (req, res) => {
-    const link = "123"; // yadi link variable mein ek value hai
+    const link = "123"; 
     const id = parseInt(link);
   if (index === -1) {
     res.status(404).send(`Item not found`);
